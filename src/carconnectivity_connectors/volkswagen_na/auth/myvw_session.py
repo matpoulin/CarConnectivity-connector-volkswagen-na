@@ -36,7 +36,7 @@ class MyVWSession(VWWebSession):
     MyVWSession class handles the authentication and session management for Volkswagen's myVW service.
     """
     def __init__(self, session_user, **kwargs) -> None:
-        countrypart = 'us'
+        countrypart = 'ca'
         if 'country' in kwargs:
             countrypart = kwargs['country']
         super(MyVWSession, self).__init__(client_id='59992128-69a9-42c3-8621-7942041ba824_MYVW_ANDROID',
